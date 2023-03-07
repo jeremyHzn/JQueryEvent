@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -13,12 +15,30 @@
         </nav>
     </header>
     <main>
-
+        <div id="containerColor">
+            <!-- 
+            Utile pour la partie 1 seul
+            <span id="affichRed">Red : </span> &nbsp; - &nbsp;
+            <span id="affichGreen">Green : </span> &nbsp; - &nbsp;
+            <span id="affichBlue">Blue : </span> -->
+            <label for="affichRed">Red</label><input type="number" id="affichRed" min="0" max="255">
+            <label for="affichGreen">Green</label><input type="number" id="affichGreen" min="0" max="255">
+            <label for="affichBlue">Blue</label><input type="number" id="affichBlue" min="0" max="255">
+        </div>
+        <br>
+        <div class="text-center">
+            <button class="btn btn-outline-success" id="clicColor">Changer</button>
+            <button class="btn btn-outline-warning" id="formColor">Valider</button>
+            <div id="error" class="invisible">
+                Erreur de saisie
+            </div>
+        </div>
     </main>
     <footer>
-        
+
     </footer>
     <script src="../assets/script/jquery-v3.6.3.min.js"></script>
     <script src="../assets/scripts/couleurs.js"></script>
 </body>
+
 </html>
