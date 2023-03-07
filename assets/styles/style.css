@@ -6,3 +6,7 @@
     border: 1px dashed black;
     background-color: white;
 }
+
+.invisible{
+    display: none;
+}
